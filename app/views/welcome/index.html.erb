@@ -1,6 +1,10 @@
 <body> 
 
   <h1>My Rails Girls Diary</h1>
+
+  <p><%= link_to("View only entries", entries_path) %></p>
+
+
   <div>
     <% for entry in @entries %>
       <h2><%= entry.title %></h2>
