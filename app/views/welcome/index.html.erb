@@ -5,7 +5,7 @@
   <p><%= link_to("View only entries", entries_path) %></p>
 
 
-  <div>
+  <div class="container">
     <% for entry in @entries %>
       <h2><%= entry.title %></h2>
       <p><%= entry.date %></p>
