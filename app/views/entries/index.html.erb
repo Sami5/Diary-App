@@ -7,5 +7,14 @@
       <p><%= entry.contents %></p>
     <% end %>
   </div>
-  <%= link_to("New entry", new_entry_path) %>
+  <br>
+  <div class = "btn-group" role="group">
+    <button type="button" class="btn btn-default">
+      <%= link_to("New entry", new_entry_path, :class => "btn") %>
+    </button>
+    <button type="button" class="btn btn-default">
+      <%= link_to("Back to Homepage", root_path, :class => "btn") %>
+    </button>
+  </div>
+
 </body>

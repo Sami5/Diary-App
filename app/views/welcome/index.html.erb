@@ -2,8 +2,9 @@
 
   <h1>My Rails Girls Diary</h1>
 
-  <p><%= link_to("View only entries", entries_path) %></p>
-
+  <div class ="btn-group" role="group">
+    <button type="button" class="btn btn-default"><%= link_to("View all diary entries", entries_path, :class => "btn") %></button>
+  </div>
 
   <div class="container">
     <% for entry in @entries %>
@@ -21,6 +22,7 @@
     <% end %>
 
   </div>
+
   <img src="http://railsgirls.com/images/rg-warsaw.png"/>
 
 </body>
